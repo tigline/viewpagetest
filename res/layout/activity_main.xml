@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+		
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="#484E61">
+	    <Button 
+	        android:id="@+id/switch_city"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/home"/>
+	    <TextView 
+	        android:id="@+id/city_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="#fff"
+	        android:textSize="24sp"/>
+
+	</RelativeLayout>
+
+	<android.support.v4.view.ViewPager
+        android:id="@+id/testViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+        
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
