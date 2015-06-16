@@ -27,9 +27,9 @@ public class CitylistActivity extends Activity implements OnClickListener{
 		switch (v.getId()) {
 		case R.id.back_city:
 			String data = "beijing";
-			Intent intent = new Intent(CitylistActivity.this,MainActivity.class);
+			Intent intent = new Intent();
 			intent.putExtra("county_code", data);
-			startActivity(intent);
+			setResult( RESULT_OK, intent);
 			finish();
 			break;
 
